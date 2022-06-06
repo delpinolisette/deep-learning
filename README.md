@@ -55,11 +55,7 @@ $L_1 = d(a,b)_{1}$, so
 $$L_1 = \lVert a - b \rVert_1 =  \sum_{i=1}^{n}{a_i - b_i}$$
 
 
-where 
-
-$a_i \in a, b_i \in b$
-
-are pixel values of image 1 and image 2, respectively. 
+where $a_i \in a, b_i \in b$ are pixel values of image 1 and image 2, respectively. 
 
 ## Distance Example 02 
 
