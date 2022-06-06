@@ -85,6 +85,12 @@ OW $X$ is said to not have finite expectation.
 ## Bias (of an estimator)
 
 
+## What is an *unbiaed estimator*?
+
+When $E{X}$ of the estimator  `==` $E[X]$ of the true parameter. 
+
+
+
 ## Variance of a random variable
 
 ## Define MSE Function 
