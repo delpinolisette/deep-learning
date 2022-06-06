@@ -53,8 +53,16 @@ Notice that for any $p \in \mathbb{N}$ that you replace in the formula for $L_p$
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
+$L_1$
+
+$d(a,b)_{1}$
+
+$\lVert a - b \rVert$
+
+$\sum_{i=1}^{n}{a_i - b_i}$
+
 $$
-L{1} = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
+L_{1} = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
 $$ 
 
 where 
