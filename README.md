@@ -22,13 +22,22 @@ We call $d$ *quasimetric* if it obeys all conditions except symmetry.
 
 Then distances we often use are $L_p$ distances. 
 
-$L_p = d(a,b)_p = ||a-b||_p = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}$
+$$L_p = d(a,b)_p = ||a-b||_p = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}$$
 
 ## Distance Example 01 
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
-$L_1 = d(a,b)_1 = ||a - b|| = \sum_{i=1}^{n}{a_i - b_i}$ where $a_i \in a$ are pixel values of image 1, $b_i \in b$ are pixel values of image 2. 
+$L_1 = d(a,b)_1 = ||a - b|| = \sum_{i=1}^{n}{a_i - b_i}$ where 
+
+$$a_i \in a, b_i \in b$$ 
+
+
+are pixel values of image 1 and image 2, respectively. 
+
+
+
+
 
 
 
