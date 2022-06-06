@@ -53,12 +53,13 @@ Notice that for any $p \in \mathbb{N}$ that you replace in the formula for $L_p$
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
-$L_1 = d(a,b)_1 = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}$ 
+$$
+L_1 = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
+$$ 
 
 where 
 
 $a_i \in a, b_i \in b$
-
 
 are pixel values of image 1 and image 2, respectively. 
 
@@ -74,7 +75,23 @@ Tuning this $k$, as well as tuning the choice for the distance metric $L_p$, is 
 
 Usually, selecting the best parameter is a matter of trial and error. You try training the classifier on several hyperparameter combinations before deciding which configuration is best. 
 
+## Function Gradients 
+
+Recall from multivariable calc that the gradient of a multivariate function $f$ is the vector $\nabla f(a)$ whose compoenents are partial derivaties of $f$ with respect to each variable: 
+
+$$
+f(a) = (Df(a_1), Df(a_2), \dots Df(a_n))
+$$
+
 # Gradient Descent
+
+Then gradient descent is the method of using the gradient vector to find the local min of a (hopefully) convex loss function. 
+
+So, if we have the MSE(L2 loss) function, the gradient is :
+
+
+
+
 
 
 

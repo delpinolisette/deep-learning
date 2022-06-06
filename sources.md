@@ -8,3 +8,5 @@
 - Python Data Science Handbook
 - https://www.cs.utah.edu/~jeffp/teaching/cs5955/L7-Distances.pdf
 - https://ml-cheatsheet.readthedocs.io/en/latest/gradient_descent.html
+- https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S16/ORF523_S16_Lec7_gh.pdf
+- Tom Apostol's Multivariable Calculus (Calculus Vol 2)
