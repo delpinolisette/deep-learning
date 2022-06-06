@@ -59,7 +59,7 @@ $d(a,b)_{1}$
 
 $\lVert a - b \rVert$
 
-$$L_1 = \sum_{i=1}^{n}{a_i - b_i}$$
+$$L_1 = d(a,b)_{1} = \lVert a - b \rVert =  \sum_{i=1}^{n}{a_i - b_i}$$
 
 $$
 L_{1} = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
