@@ -46,6 +46,8 @@ You can prove that $L_p$ distances are valid metrics, like this:
 
 Notice that for any $p \in \mathbb{N}$ that you replace in the formula for $L_p$, we have nonnegativity, identity, symmetry, and triangle inequality. 
 
+So, $L_p := d(a,b)_p$
+
 ## Distance Example 01 
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
@@ -86,7 +88,11 @@ So, if we have the MSE(L2 loss) function on $f(m,b)$, where $m$ is the mean, $b$
 
 
 $$
-f(m,b) = (Df(m), Df(b))
+f(m,b) = (Df(m), Df(b)) 
+\\ = \begin{pmatrix}
+  Df(m) \\ 
+  Df(b)
+\end{pmatrix} 
 $$
 
 # First Equation for a Straightforward Neural Net 
