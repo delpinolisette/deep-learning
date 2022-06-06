@@ -54,7 +54,7 @@ Notice that for any $p \in \mathbb{N}$ that you replace in the formula for $L_p$
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
 $$
-L_1 = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
+L{1} = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
 $$ 
 
 where 
@@ -87,13 +87,13 @@ $$
 
 Then gradient descent is the method of using the gradient vector to find the local min of a (hopefully) convex loss function. 
 
-So, if we have the MSE(L2 loss) function, the gradient is :
+So, if we have the MSE(L2 loss) function on $f(m,b)$, where $m$ is the mean, $b$ is the bias, then the gradient is :
 
 
 
-
-
-
+$$
+f(m,b) = (Df(m), Df(b))
+$$
 
 # First Equation for a Straightforward Neural Net 
 
