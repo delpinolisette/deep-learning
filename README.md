@@ -3,6 +3,8 @@ notes and work on deep learning.
 
 The aim of these is to synthesize theory from several different "classical" sources and introduce insights from newer literature. 
 
+See `statistical_theory_background.md` in repo for some of the needed math background. 
+
 # Measures 
 
 Measures that we use to measure distances (ex: between images in nearest neighbors) include $L_p$ distances. 
@@ -22,19 +24,24 @@ We call $d$ *quasimetric* if it obeys all conditions except symmetry.
 
 Then distances we often use are $L_p$ distances. 
 
-$$L_p = d(a,b)_p = ||a-b||_p = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}$$
+$L_p = d(a,b)_p = ||a-b||_p = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}$
 
 ## Distance Example 01 
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
-$L_1 = d(a,b)_1 = ||a - b|| = \sum_{i=1}^{n}{a_i - b_i}$ where 
+$L_1 = d(a,b)_1 = ||a - b|| = \sum_{i=1}^{n}{a_i - b_i}$ 
 
-$$a_i \in a, b_i \in b$$ 
+where 
+
+$a_i \in a, b_i \in b$
 
 
 are pixel values of image 1 and image 2, respectively. 
 
+## Distance Example 02 
+
+In 
 
 
 
