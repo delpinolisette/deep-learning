@@ -37,10 +37,7 @@ We call $d$ *quasimetric* if it obeys all conditions except symmetry.
 Then distances we often use in vector math are $L_p$ distances. 
 
 $$
-L_p 
-\\ = d(a,b)_p
-\\ = \lVert a-b \rVert_p 
-\\ = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}
+L_p = \lVert a-b \rVert_p = (\sum_{i=1}^{n}{(a_i - b_i)})^{1/p}
 $$
 
 ## $L_p$ distances are metrics
@@ -53,17 +50,10 @@ Notice that for any $p \in \mathbb{N}$ that you replace in the formula for $L_p$
 
 If we have two images and we want to perform a nearest neighbors classification on them, we use the $L_1$ distance, treating the images as matrices and pixels as entires. Then 
 
-$L_1$
-
-$d(a,b)_{1}$
-
-$\lVert a - b \rVert$
+$L_1 = d(a,b)_{1}$, so 
 
 $$L_1 = \lVert a - b \rVert_1 =  \sum_{i=1}^{n}{a_i - b_i}$$
 
-$$
-L_{1} = d(a,b)_{1} = \lVert a - b \rVert = \sum_{i=1}^{n}{a_i - b_i}
-$$ 
 
 where 
 
