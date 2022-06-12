@@ -6,12 +6,14 @@ The aim of these is to synthesize theory from several different "classical" sour
 See `statistical_theory_background.md` in repo for some of the needed math background. 
 
 
+
 - [Measures](#measures)
   - [$L_p$ Distances](#l_p-distances)
   - [$L_p$ distances are metrics](#l_p-distances-are-metrics)
   - [Distance Example 01](#distance-example-01)
   - [Distance Example 02](#distance-example-02)
 - [Hyperparameter Tuning](#hyperparameter-tuning)
+  - [Function Gradients](#function-gradients)
 - [Gradient Descent](#gradient-descent)
 - [First Equation for a Straightforward Neural Net](#first-equation-for-a-straightforward-neural-net)
 
@@ -83,19 +85,23 @@ $$
 
 Then gradient descent is the method of using the gradient vector to find the local min of a (hopefully) convex loss function. 
 
-So, if we have the MSE(L2 loss) function on $f(m,b)$, where $m$ is the mean, $b$ is the bias, then the gradient is :
+So, if we have the MSE($L_2$ loss) function $$f(m,b) = \frac{1}{n}\sum_{i = n}^{n}{(y_i - \hat{y_i})^2} =\\ $$ 
 
-
+where $m$ is the mean, $b$ is the bias, then the gradient is
 
 $$
 f(m,b) = (Df(m), Df(b)) 
-\\ = \begin{pmatrix}
-  Df(m) \\ 
+\\ = \begin{bmatrix}
+  Df(m) \\
   Df(b)
-\end{pmatrix} 
+\end{bmatrix} 
+\\ = \begin{bmatrix}
+\sum_{i = 1}^{n} 2(y_i -  \hat{y_i}) \frac{\partial{f}}{\partial{m}}\hat{y_i} \\
+\sum_{i = 1}^{n} 2(y_i -  \hat{y_i}) \frac{\partial{f}}{\partial{b}}\hat{y_i}
+\end{bmatrix}
 $$
 
-# First Equation for a Straightforward Neural Net 
+Gradient Descent then minimizes this function step by step (where the step size is determined by the learning rate)
 
 
 
