@@ -3,7 +3,7 @@ notes and work on deep learning.
 
 The aim of these is to synthesize theory from several different "classical" sources and introduce insights from newer literature. 
 
-See `statistical_theory_background.md` in repo for some of the needed math background. 
+See `statistical_theory_background.md` in this repo [here](https://github.com/delpinolisette/deep-learning/blob/main/statistical_theory_background.md) for some of the needed math background. 
 
 
 
@@ -15,7 +15,6 @@ See `statistical_theory_background.md` in repo for some of the needed math backg
 - [Hyperparameter Tuning](#hyperparameter-tuning)
   - [Function Gradients](#function-gradients)
 - [Gradient Descent](#gradient-descent)
-- [First Equation for a Straightforward Neural Net](#first-equation-for-a-straightforward-neural-net)
 
 
 # Measures 
@@ -75,11 +74,25 @@ Usually, selecting the best parameter is a matter of trial and error. You try tr
 
 ## Function Gradients 
 
-Recall from multivariable calc that the gradient of a multivariate function $f$ is the vector $\nabla f(a)$ whose compoenents are partial derivaties of $f$ with respect to each variable: 
+Recall from multivariable calculus that the gradient of a multivariate function $f$ is the vector $\nabla f(a)$ whose compoenents are partial derivaties of $f$ with respect to each variable: 
 
 $$
-f(a) = (Df(a_1), Df(a_2), \dots Df(a_n))
+\nabla f(a) = (Df(a_1), Df(a_2), \dots Df(a_n))
 $$
+
+## Vector-Valued Function Gradients 
+
+We can also define the gradient on vector-valued functions in an alternative way (this one was popular in problem sets for my real analysis class) which relates it to the derivative
+
+Say $f$ maps a column vector $a = (a_1, \dots a_n)^{\intercal}$ from $\mathbb{R}^n$ to $\mathbb{R}$. 
+
+Then the gradient $\nabla f$ must satisfy:
+
+$$
+f(a + \epsilon h) = f(a) + \epsilon(\nabla f(a))^{\intercal} h + O(\epsilon^2)
+$$
+
+Where $\epsilon h$ is some random perturbation.
 
 # Gradient Descent
 
@@ -103,6 +116,9 @@ $$
 
 Gradient Descent then minimizes this function step by step (where the step size is determined by the learning rate)
 
+
+
+issue : that thing doesnt render properly on readme - ton of bugs. need to make a pdf copy of these. 
 
 
 
