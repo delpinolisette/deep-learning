@@ -82,7 +82,7 @@ $$
 
 ## Vector-Valued Function Gradients 
 
-We can also define the gradient on vector-valued functions in an alternative way (this one was popular in problem sets for my real analysis class) which relates it to the derivative
+We can also define the gradient on vector-valued functions in an alternative way (this one was popular in problem sets for my real analysis class) which more clearly shows the gradient as a derivative. 
 
 Say $f$ maps a column vector $a = (a_1, \dots a_n)^{\intercal}$ from $\mathbb{R}^n$ to $\mathbb{R}$. 
 
